@@ -1,5 +1,6 @@
 - some-label:
   - changed-files:
-    - any-glob-to-any-file: ['service1/**/*']
+    - any-glob-to-any-file: 
+      - 'service1/**/*'
 
 
