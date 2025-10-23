@@ -1,8 +1,8 @@
-"scope: service1":
+"service1":
   - service1/**/*
   - .github/workflows/service1
 
-"scope: service2":
+"service2":
   - service2/**/*
   - .github/workflows/service2
 
