@@ -1,0 +1,4 @@
+[submodule "submodule/test-monorepo-service2"]
+	path = submodule/test-monorepo-service2
+	url = https://github.com/iretdx-itsuki-wakizono/test-monorepo-service2.git
+	branch = develop
