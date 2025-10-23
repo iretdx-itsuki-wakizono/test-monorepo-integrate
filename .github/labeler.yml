@@ -1,5 +1,5 @@
-some-label:
-  changed-files:
+- some-label:
+  - changed-files:
     - any-glob-to-any-file: ['service1/**/*']
 
 
