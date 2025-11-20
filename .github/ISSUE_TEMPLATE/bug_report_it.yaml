@@ -1,8 +1,8 @@
 # bug_report.yml
-name: 結合バグ報告
+name: 単体テストバグ報告
 description: 不具合報告はこちら
 title: 'Bug: '
-labels: ['bug', 'IT']
+labels: ['bug','IT','NPF']
 body:
   - type: input
     id: target
@@ -10,7 +10,7 @@ body:
       label: 対象API
       description: |
         対象のAPIを記載してください。
-        例）api/testなど
+        例）/salesforce/solvers/applications
     validations:
       required: true
   - type: textarea
@@ -28,22 +28,12 @@ body:
       label: 再現手順
       description: 不具合を再現させる手順を記載してください。
       value: |
-        1. 
-        2. 
-        3. 
+        1.
+        2.
+        3.
         ...
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: 再現するブラウザを選択してください※複数選択可
-      multiple: false
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: dropdown
     id: roll
     attributes:
