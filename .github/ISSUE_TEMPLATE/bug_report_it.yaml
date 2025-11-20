@@ -1,8 +1,8 @@
 # bug_report.yml
-name: 単体テストバグ報告
+name: バグ報告
 description: 不具合報告はこちら
 title: 'Bug: '
-labels: ['bug','IT','NPF']
+labels: ['bug','NPF']
 body:
   - type: input
     id: target
@@ -35,17 +35,15 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: roll
+    id: process
     attributes:
-      label: 再現するロールを選択してください※複数選択可
-      multiple: true
+      label: テスト工程を選択してください
+      multiple: false
       options:
-        - 営業担当
-        - 営業責任者
-        - 支援責任者
-        - アンケート事務局
-        - 稼働率調査事務局
-        - システム管理者
+        - 単体テスト
+        - 結合テスト
+        - SQAテスト
+        - その他
   - type: textarea
     id: supplement
     attributes:
