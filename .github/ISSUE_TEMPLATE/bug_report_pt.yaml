@@ -1,0 +1,53 @@
+# bug_report.yml
+name: バグ報告
+description: 不具合報告はこちら
+title: 'Bug: '
+labels: ["bug", "PT"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要
+      description: |
+        不具合の概要を記載してください。
+        見た目に関係する場合は、スクリーンショット等を貼り付けてください。
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: 再現手順
+      description: 不具合を再現させる手順を記載してください。
+      value: |
+        1. 
+        2. 
+        3. 
+        ...
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 再現するブラウザを選択してください※複数選択可
+      multiple: false
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: dropdown
+    id: roll
+    attributes:
+      label: 再現するロールを選択してください※複数選択可
+      multiple: true
+      options:
+        - 営業担当
+        - 営業責任者
+        - 支援責任者
+        - アンケート事務局
+        - 稼働率調査事務局
+        - システム管理者
+  - type: textarea
+    id: supplement
+    attributes:
+      label: 補足

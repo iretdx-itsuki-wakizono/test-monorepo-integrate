@@ -1,8 +1,8 @@
 # bug_report.yml
-name: バグ報告
+name: 結合バグ報告
 description: 不具合報告はこちら
 title: 'Bug: '
-labels: "bug"
+labels: ["bug", "IT"]
 body:
   - type: textarea
     id: overview
