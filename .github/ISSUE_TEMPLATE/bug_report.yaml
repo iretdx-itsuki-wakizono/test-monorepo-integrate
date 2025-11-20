@@ -28,28 +28,25 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: 再現するブラウザを選択してください
+      label: 再現するブラウザを選択してください※複数選択可
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-  - type: checkboxes
+  - type: dropdown
     id: roll
     attributes:
-      label: ロール
-      description: |
-        再現するロールを記載してください。
+      label: 再現するロールを選択してください※複数選択可
+      multiple: true
       options:
-          - label: 営業担当
-          - label: 営業責任者
-          - label: 支援責任者
-          - label: アンケート事務局
-          - label: 稼働率調査事務局
-          - label: システム管理者
-    validations:
-      required: false
+        - 営業担当
+        - 営業責任者
+        - 支援責任者
+        - アンケート事務局
+        - 稼働率調査事務局
+        - システム管理者
   - type: textarea
     id: supplement
     attributes:
