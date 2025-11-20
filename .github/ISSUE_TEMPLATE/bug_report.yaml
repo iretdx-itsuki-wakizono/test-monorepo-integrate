@@ -24,6 +24,21 @@ body:
           - label: BBB
     validations:
       required: false
+  - type: checkboxes
+    id: roll
+    attributes:
+      label: ロール
+      description: |
+        再現するロールを記載してください。
+      options:
+          - label: 営業担当
+          - label: 営業責任者
+          - label: 支援責任者
+          - label: アンケート事務局
+          - label: 稼働率調査事務局
+          - label: システム管理者
+    validations:
+      required: false
   - type: textarea
     id: process
     attributes:
