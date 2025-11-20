@@ -4,6 +4,15 @@ description: 不具合報告はこちら
 title: 'Bug: '
 labels: ['bug', 'IT']
 body:
+  - type: input
+    id: target
+    attributes:
+      label: 対象API
+      description: |
+        対象のAPIを記載してください。
+        例）api/testなど
+    validations:
+      required: true
   - type: textarea
     id: overview
     attributes:
