@@ -12,19 +12,17 @@ body:
         見た目に関係する場合は、スクリーンショット等を貼り付けてください。
     validations:
       required: true
-  - type: input
+  - type: checkboxes
     id: environment
     attributes:
       label: 再現環境
       description: |
         再現環境を記載してください。
-        例：
-        Chrome + Windows
-        Edge + Windows
-        Chrome + macOS
-        Safari + macOS
+        options:
+          - label: AAA
+          - label: BBB
     validations:
-      required: true
+      required: false
   - type: textarea
     id: process
     attributes:
